@@ -9,7 +9,7 @@ const app = express();
 app.use(cors({
    origin: [
     "http://localhost:8080",        // local dev
-    "http://contact-backend-kohl.vercel.app", // production frontend URL
+    "https://sunnyridgesolutions.com", // production frontend URL
   ],
 }));
 app.use(express.json());
