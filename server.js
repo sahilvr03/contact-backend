@@ -66,7 +66,7 @@ app.post("/send-email", contactFormValidators, async (req, res) => {
     // ✅ Email content
     const mailOptions = {
       from: `"Sunnyridge Solutions Contact" <${process.env.EMAIL_USER}>`,
-      to: "ewe111.vijay@gmail.com",
+      to: "contact@sunnyridgesolutions.com",
       subject: "New Contact Form Submission",
       html: `
         <h2>New Contact Message</h2>
