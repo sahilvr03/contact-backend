@@ -6,7 +6,12 @@ const xss = require("xss");
 require("dotenv").config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+   origin: [
+    "http://localhost:8080",        // local dev
+    "http://contact-backend-kohl.vercel.app", // production frontend URL
+  ],
+}));
 app.use(express.json());
 
 // ✅ Validation & Sanitization Rules
